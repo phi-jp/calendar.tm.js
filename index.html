@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Calendar</title>
+        <script src="https://raw.github.com/phi1618/tmlib.js/develop/build/tmlib.js"></script>
+        <script src="calendar.tm.js"></script>
+        <script>
+        tm.main(function() {
+            var world = tm.dom.Element("#world");
+            var calendar = tm.plugin.Calendar(2013);
+
+            world.append(calendar);
+        });
+        </script>
+    </head>
+    <body>
+        <div id="world"></div>
+    </bdoy>
+</html>
